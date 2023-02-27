@@ -4,13 +4,15 @@ Python Course
 9:00  start
 11:00 coffee
 12:30 lunch
-3:00  
+3:00  done
 
 all my code is here: https://github.com/onionmccabbage/pythonFeb2023
 
 > basics
 > functions
 - classes inheritance
-- challenge exercise
+> challenge exercise
 - get data from and API
-
+- multi-threading
+- get to the bottom of imports and modules (and namespacing)
+- args and kwargs

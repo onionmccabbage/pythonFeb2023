@@ -1,6 +1,6 @@
 # we will write a 'Person' class
 
-class Person:
+class Person(object): # here we explicitly inherit from object
     '''This class encapsulates a name, age and email fro a person'''
     def __init__(self, n, a, e): # every function in a class MUST take 'self' as an argument
         # here we can set inital values on our class
