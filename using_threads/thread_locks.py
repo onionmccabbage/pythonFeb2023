@@ -5,9 +5,11 @@ import timeit
 
 # here is a global variable
 counter = 1
+lock = threading.Lock() # we now have a lock we can use
 
 def workerA():
     global counter # we now have access to the counter in the global scope
+    lock.acquire() # we have exclusive use of teh locked assets
     try:
         while counter < 10:
             counter += 1 # increment the counter
@@ -17,9 +19,10 @@ def workerA():
     except Exception as err:
         print(err)
     finally:
-        pass
+        lock.release()
 def workerB():
     global counter # we now have access to the counter in the global scope
+    lock.acquire() # we have exclusive use of teh locked assets
     try:
         while counter >-10:
             counter -= 1 # decrement the counter
@@ -29,14 +32,14 @@ def workerB():
     except Exception as err:
         print(err)
     finally:
-        pass
+        lock.release()
 
 def main():
     t0 = timeit.default_timer()
     tA = threading.Thread(target=workerA)
     tB = threading.Thread(target=workerB)
-    tA.start()
     tB.start()
+    tA.start()
     tA.join()
     tB.join()
     
