@@ -4,6 +4,7 @@ Python Course
 9:00  start
 11:00 coffee
 12:30 lunch
+2:45  tea
 4:00  done
 
 all my code is here: https://github.com/onionmccabbage/pythonFeb2023
@@ -11,6 +12,7 @@ all my code is here: https://github.com/onionmccabbage/pythonFeb2023
 Monday
 > basics
 > functions
+- property decorator
 - classes inheritance
 > challenge exercise
 - get data from and REST - API
@@ -19,18 +21,25 @@ Monday
 - try-except-finally
 
 Tuesday
-- complete the semaphore example
-- get to the bottom of imports and modules (and namespacing)
-- args and kwargs
-- file i/o
-> What code does, efficiency concerns and code style
-> architecture, structure, and professional code best practice
-> range, generators
+> complete the semaphore example
+> get to the bottom of imports and modules (and namespacing)
+> args and kwargs
+- daemon thread (green thread), rpc
+> file i/o
+- What code does, efficiency concerns and code style
+- architecture, structure, and professional code best practice
+- the 'with' operator for iterables
+- range, generators, iter
 > tuple comprehension, list compresension, dictionary comprehension
-- doctest
+> doctest
 - override built-in operators
+- consolidate threads - how to practically apply
+- multi-processing and why it's rare
+- after lunch review
+- explore actual scripts...
 
 Wednesday
+- built-in and custom decorator
 
 
 

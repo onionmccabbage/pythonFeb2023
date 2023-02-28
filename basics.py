@@ -4,11 +4,11 @@ b = 3.4 # float
 
 print(type(a*b))
 
-# c = input('type something ') # everythgni entered by users will be a string
+# c = input('type something ') # everything entered by users will be a string
 # d = int(float(c)) # safe bit of type casting
 # print (type(d))
 e = True # or False for boolean
-f = "is it coffeey yet" # all strings are immutable collections of characters
+f = "is it coffee yet" # all strings are immutable collections of characters
 print(f[6:14:2]) # always indexed from zero [start:stop-before:step]
 
 # list and tuple
