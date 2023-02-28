@@ -4,15 +4,33 @@ Python Course
 9:00  start
 11:00 coffee
 12:30 lunch
-3:00  done
+4:00  done
 
 all my code is here: https://github.com/onionmccabbage/pythonFeb2023
 
+Monday
 > basics
 > functions
 - classes inheritance
 > challenge exercise
-- get data from and API
+- get data from and REST - API
 - multi-threading
+- managing returned data from threads
+- try-except-finally
+
+Tuesday
+- complete the semaphore example
 - get to the bottom of imports and modules (and namespacing)
 - args and kwargs
+- file i/o
+> What code does, efficiency concerns and code style
+> architecture, structure, and professional code best practice
+> range, generators
+> tuple comprehension, list compresension, dictionary comprehension
+- doctest
+- override built-in operators
+
+Wednesday
+
+
+

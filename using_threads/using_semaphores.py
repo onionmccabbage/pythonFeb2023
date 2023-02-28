@@ -22,6 +22,9 @@ class TicketSeller(Thread):
                 self.ticketsSold += 1
                 ticketsAvailable -=1
                 print(f'Sold a ticket. {ticketsAvailable} tickets remaining')
+            self.__sem.release() # added this line!!
+        # all done
+        print(f'Sold {self.ticketsSold}')
 
 if __name__ == '__main__':
     ticketsAvailable = 1000
