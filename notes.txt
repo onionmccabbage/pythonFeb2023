@@ -24,7 +24,6 @@ Tuesday
 > complete the semaphore example
 > get to the bottom of imports and modules (and namespacing)
 > args and kwargs
-- daemon thread (green thread), rpc
 > file i/o
 - What code does, efficiency concerns and code style
 - architecture, structure, and professional code best practice
@@ -32,14 +31,18 @@ Tuesday
 - range, generators, iter
 > tuple comprehension, list compresension, dictionary comprehension
 > doctest
+- daemon thread (green thread), rpc
 - override built-in operators
 - consolidate threads - how to practically apply
+> more use-cases...
 - multi-processing and why it's rare
 - after lunch review
-- explore actual scripts...
+> explore actual scripts...
 
 Wednesday
-- built-in and custom decorator
+- functional, procedural, class
+- passing run-time arguments
+- built-in and custom decorators
 
 
 

@@ -1,0 +1,42 @@
+Python Review 2 
+=============== 
+This exercise is an opportunity to consider architecture as well as build a solution
+There is an API end-point here: https://swapi.dev/api  	   (it is a Python API written in Django)
+(It includes some documentation here: https://swapi.dev/documentation)
+
+To use it, pass parameters for 'category' and 'id' e.g.
+  https://swapi.dev/api/people/1
+  https://swapi.dev/api/species/3
+
+Details
+=======
+- In a new package, create a Python file
+- In this Python file, write a function which makes a 'requests.get()' call to https://swapi.dev/api/people/1
+- Print the returned data (see Mondays example using requests)
+
+Optional
+========
+- Change the code to use f'https://swapi.dev/api/people/{n}' then use a loop to inject the number n with values 1, 2, 3
+- Append the returned data in a text file
+- Wrap relevant code in try-except handlers
+
+Even More optional
+==================
+Category can be any one of 'people', 'planets', 'species' or 'vehicles'
+The id can be a positive number, though some id values currently fail, so catch exceptions
+(NB Vehicles is problematic, but vehicle id=30 works)
+You could ask the user for a category and an id or read values in from a data file
+
+If Time
+=======
+Architect your application so you have classes for 'People', 'Planets', 'Species' and 'Vehicles'
+These classes could all descend from a common base class called 'Swapi'
+Populate an instance of the relevant class, depending on the returned data
+  E.g. all categories includes a 'name' property
+  The 'people' category includes 'hair_color' and 'height'
+  The 'planets' category includes 'orbital_period' and 'population'
+  The 'species' category includes 'designation' and 'homeworld'
+  The 'vehicles' caltegory includes 'manufacturer' and 'model'
+Try to make the request happen in it's own thread, returning data via the 'join' method
+Write the 'swapi_service' in a separate module
+(You could encapsulate validation in classes too)

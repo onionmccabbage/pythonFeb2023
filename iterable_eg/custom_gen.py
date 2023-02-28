@@ -7,6 +7,7 @@ def myGen():
 
 if __name__ == '__main__':
     g = myGen() # we need an intance of our custom generator
+    # g.arbirary_property = 'ooh thats clever'
     print( g.__next__() ) # 1
     print( g.__next__() ) # 2
     for i in g:
