@@ -36,10 +36,11 @@ Wednesday
 > PEP8 is a good idea
 > daemon thread (green thread), rpc
 > override built-in operators
-- consolidate threads - how to practically apply
-- functional, procedural, class
-- What code does, efficiency concerns and code style
-- architecture, structure, and professional code best practice
+> consolidate threads - how to practically apply
+> functional, procedural, class
+> What code does, efficiency concerns and code style
+> profiling your code - timeit, cprofile
+> architecture, structure, and professional code best practice
 > context manager
 > the 'with' operator for iterables
 > multi-processing and why it's rare
@@ -47,14 +48,10 @@ Wednesday
 > passing run-time arguments
 > built-in and custom decorators
 > more on testing: unittest
-- pytest
+> pytest
 
-
-
-
-
-
-
+Where to go from here:
+  https://pynative.com/python-exercises-with-solutions/
 
 
 https://www.transmedia.co.uk/feedback/   password ‘gateway’ 
