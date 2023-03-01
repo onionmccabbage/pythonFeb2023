@@ -1,0 +1,8 @@
+Name: Luke Skywalker Height: 172cm
+
+Name: Alderaan Population: 2000000000
+Name: Wookie Classification: mammal
+Name: Darth Vader Height: 202cm
+
+Name: Darth Vader Height: 202cm
+

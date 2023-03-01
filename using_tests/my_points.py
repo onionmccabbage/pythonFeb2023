@@ -22,6 +22,10 @@ class Point():
             self.__y = new_y # the 'mangled' value of x
         else:
             raise TypeError # throw an exception - wrong data type
+    @staticmethod # only callable as Point.doStuff()
+    def doStuff(): # this method belongs to the class not to any instance
+        pass
+    @classmethod # explicitly say this is a methos of the class
     def moveBy(self, dx=0, dy=0):
         self.x += dx
         self.y += dy

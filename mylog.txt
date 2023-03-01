@@ -1,0 +1,4 @@
+
+this text will be redirected to the log file
+this text will be sent to the default console
+this text will be redirected to the log file
