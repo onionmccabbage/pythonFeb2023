@@ -1,0 +1,25 @@
+Python Review 3
+===============
+
+Continue with our context manager example
+Import sys
+Write some 'if' logic to check if additional sys.argv values have been provided
+If so, use the first value, sys.argv[1] as the name of the file to use in the context manager
+(Validate that sys,argv[1] s a non-emty string)
+If no value exists in sys.argv[1] then use a default filename
+
+NB remember you will ned to run this OUTSIDE VSCode, e.g
+python review3.py file.txt newcontent
+
+Next, check to see if there is a value for sys.argv[2] 
+If there is, use that value as the text to be written into the file by the context manager
+If not, use some default text
+
+Then go back you review2. Import your context manager into that project
+Use the context manager to direct the returned API text into a file
+Don't worry about sys.argv, since your code will use defaults
+
+Optional
+--------
+Write tests to prove your validation techniques and to prove the default values get used
+
