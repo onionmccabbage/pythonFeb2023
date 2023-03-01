@@ -33,19 +33,21 @@ Tuesday
 
 Wednesday
 > the SWAPI exercise
+> PEP8 is a good idea
 > daemon thread (green thread), rpc
 > override built-in operators
 - consolidate threads - how to practically apply
 - functional, procedural, class
 - What code does, efficiency concerns and code style
 - architecture, structure, and professional code best practice
-- context manager
-- the 'with' operator for iterables
-- multi-processing and why it's rare
+> context manager
+> the 'with' operator for iterables
+> multi-processing and why it's rare
 > range, generators, iter
 > passing run-time arguments
 > built-in and custom decorators
-- more on testing: unittest and pytest
+> more on testing: unittest
+- pytest
 
 
 

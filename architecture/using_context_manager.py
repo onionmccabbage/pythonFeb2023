@@ -12,10 +12,17 @@ def my_redirect(redir): # redir will be the context I want to use
     # remember to put the original context back in place
     sys.stdout = orig_context # all good
 
-if __name__ == '__main__':
+def main():
+    if len(sys.argv[]) > 1: # sys.argv[0] is ALWAYS the module name
+        pass # handle the additional arguments
     with open('mylog.txt', 'a') as fout:
         # here we use our (decorated) context manager function
         with my_redirect(fout): # here we pass our file acces object to be used as the new context
             print('this text will be redirected to the log file')
         print('this text will be sent to the default console')
     print('where does this go?')
+
+
+
+if __name__ == '__main__':
+    main()

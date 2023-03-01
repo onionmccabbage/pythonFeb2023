@@ -4,7 +4,7 @@ import gevent # may need to pip install gevent
 from gevent import socket
 
 def demo():
-    hosts = ['www.ericsson.com', 'www.bbc.co.uk', 'swapi.dev', 'www.python.org']
+    hosts = ['www.ericsson.com', 'www.bbc.co.uk', 'swapi.dev', 'www.python.org', 'www.python.org']
     # we can get a list of the IP addresses of these hosts
     jobs  = [gevent.spawn(socket.gethostbyname, host) for host in hosts]
     # we need to join the threads

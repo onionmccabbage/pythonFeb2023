@@ -9,7 +9,7 @@ class SwapiService:
         url = f"https://swapi.dev/api/{category}/{id}"
         print(url)
         response = requests.get(url)
-        return response.text
+        return response.text # json
 
 if __name__ == "__main__":
     SwapiService().__init__()

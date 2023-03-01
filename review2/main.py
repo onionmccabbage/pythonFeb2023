@@ -7,7 +7,7 @@ from vehicles import Vehicles # not used in this example
 from planets import Planets
 from species import Species
 
-class Menu:
+class Menu():
     categories = ('people', 'planets', 'species', 'vehicles')
     def __init__(self):
         self.menu_choices = {
@@ -44,6 +44,7 @@ class Menu:
     def getPeople(self):
         self.category = 'people'
         result_d = json.loads(SwapiService.getSwapi(self.category, self.getId()))
+        # print(type(result_d))
         self.people = People(result_d['name'], result_d['height'])
         result = "Name: {} Height: {}cm\n".format(self.people.name, self.people.height)
         print(result)

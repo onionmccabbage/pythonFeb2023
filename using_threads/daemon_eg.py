@@ -12,7 +12,8 @@ def daemonThread():
 
 if __name__ == '__main__':
     s = Thread(target=standardThread)
-    d = Thread(target=daemonThread)
-    d.setDaemon(True) # we now have a daemon thread - it will terminate whne the other threads are done
+    d = Thread(target=daemonThread) # daemon=True
+    # a daemon can chew through a queue of tasks
+    d.setDaemon(True) # we now have a daemon thread - it will terminate when the other threads are done (inc main thread)
     s.start()
     d.start()
